@@ -1,10 +1,7 @@
 const inputField = document.getElementById('input-field')
 
-console.log(inputField)
-
-//document.getElementById('clear').addEventListener('click', () => inputField.value = inputField.value.slice(1,))
 document.getElementById('clear').addEventListener('click', () => inputField.value = '')
-//document.getElementById('mc')
+document.getElementById('mc').addEventListener('click', () => inputField.value = inputField.value.slice(0,-1))
 document.getElementById('percentage').addEventListener('click', () => inputField.value += '%')
 document.getElementById('divide').addEventListener('click', () => inputField.value += '/')
 document.getElementById('seven').addEventListener('click', () => inputField.value += '7')
